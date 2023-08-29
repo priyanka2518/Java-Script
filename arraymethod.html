@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[10,20,30,40,50,60]
+        // push():IT IS USED TO ADD THE MULTIPLE ELEMENTS FROM LAST index
+        // AND IT WILL REFLECT US NEW UPDATED LENGTH OF AN Array
+
+        console.log(arr.push("push",70,60));
+        console.log(arr);
+
+        //pop():It IS USED TO DELETE AN ELEMENT FROM LAST INDEX
+        //IT WILL RETURN US DELETED ELEMENT
+        //NOTE:ONLY ONE ELEMENT WE CAN DELETE SIMULTANEOUSLY
+        console.log(arr.pop());
+
+        //shift():IT IS USED TO DELETE AN ELEMENT FROM START INDEX
+        //NOTE:ONLY ONE ELEMENT WE CAN DELETE SIMULTANEOUSLY
+        console.log(arr.shift());
+        console.log(arr);
+
+        //unshift():IT IS USED TO ADD THE MULTIPLE ELEMENT FROM LAST INDEX
+        //AND IT WILL REFLECT US NEW UPDATED LENGTH OF AN ARRAY
+        console.log(arr.unshift("add",false));
+        console.log(arr);
+
+        // indexOf():IT IS USED TO KNOW THE INDEX OF AN ELEMENT
+        console.log(arr.indexOf(20));
+
+        // includes():IT IS USED TO CHECK THE ELEMENT WHETHER IT IS PRESENT OR NOT
+        //IF IT IS PRESENT MEANS IT WILL RETURN TRUE OR ELSE FALSE
+        console.log(arr.includes(30));
+
+        //length():IT IS USED TO FETCH THE ACTUAL LENGTH OF AN ARRAY
+        console.log(arr.length);
+
+        //reverse(): IT IS USED TO REVERSED AN ARRAY
+        console.log(arr.reverse());
+
+        //sort():IT IS USED TO SORTING AN ELEMENT
+        let sort1=["banana",10,"apple",20]
+        console.log(sort1.sort());
+
+        // slice(st.index,last index):IT IS USED TO SPLITS THE ARRAY INTO FRAGMENTS
+        console.log(sort1.slice(1,3));
+
+        // splice(start value,delete value,new value)
+        let spli=[10,20,30,40,50]
+        console.log("original array");
+        console.log(spli);
+
+        console.log(spli.splice(1,3,300));
+        console.log("updated value");
+        console.log(spli);
+
+    </script>
+</body>
+</html>

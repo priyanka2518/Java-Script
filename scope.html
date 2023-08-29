@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("start");
+        //Global scope:the visibility of a variable is throughout the class,
+        //we can access the global scope variable anywhere throughout the class
+       
+        //ex-var
+        var a=10;
+        if(true)
+        {
+            console.log(a);
+        }
+        //BLOCK SCOPE:IF WE ARE DECLAIRED THIS VARIABLE IN BLOCK (IF BLOCK)
+        //WE CANNOT ABLE TO ACCESS THIS VARIABLE OUTSIDE OF THE BLOCK 
+        //THIS IS CALLED AS BLOCK SCOPE VARIABLE
+        // EX-let, const
+       
+        //let
+        if(true)
+        {
+            let b=20;
+        }
+        console.log(b);
+
+        //const
+        if(true)
+        {
+            const c=30;
+        }
+        console.log(c);
+
+        //var
+        if(true)
+        {
+            var d=10;
+        }
+        console.log(d);
+    </script>
+</body>
+</html>

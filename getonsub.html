@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="getOnsub()">
+        <input type="text" id="in1">
+        <br>
+        <input type="submit" value="SUBMIT">
+        <script>
+            function getOnsub() {
+                let inp1=document.getElementById("in1").value;
+                if(inp1=="sachin")
+                {
+                    alert("Your form was succeessfully submited")
+                }
+                else
+                {
+                    alert("Please provide correct details")
+                }
+                alert("Your form was successfully submitted")
+            }
+        </script>
+    </form>
+</body>
+</html>

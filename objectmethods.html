@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={name:"samsung",price:10000}
+        obj.make="germany"
+        console.log(obj);
+
+        //delete
+        delete obj.name
+        console.log();
+
+        console.log(Object.values(obj));
+
+        //values():IT IS USED TO VALUES OF AN OBJECT
+        console.log(Object.keys(obj));
+
+        //seal():IT IS USED TO RESTRICT THE OBJECT,WE CANT ADD NEW KEY AND VALUE PAIR
+        //BUT WE CAN MODIFY EXISTING ONE
+
+        console.log(Object.seal(obj));
+        obj.make="japan"
+        console.log(obj);
+        obj.name="apple"
+        console.log(obj)
+        
+        //freez():it is not allowing us to modify
+        console.log(Object.freeze(obj))
+        obj.name="lava"
+        console.log(obj);
+
+        //entries():IT USED TO CONVERT AN OBJECT INTO AN ARRAY
+        console.log(Object.entries(obj));
+
+        //assign()
+        let mobile={company:"samsung",price:1000}
+        let mobile2={make:"INDIA",rom:4}
+        console.log(Object.assign(mobile,mobile2));
+
+
+
+    </script>
+</body>
+</html>

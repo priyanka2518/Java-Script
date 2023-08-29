@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // By using literals
+
+        let str="Hello"
+        str="bye"
+        console.log(str);//bye
+        str[2]="a";
+        console.log(str);//bye
+
+        //By using new keyword
+        let str1=new String("HELLO");
+        console.log(str1);
+        console.log(typeof str1);//object
+
+        let str2='Hey i am single cott';
+        console.log(typeof str2);//string
+
+        let str3=`Hey i am backtick`;
+        console.log(typeof str3);//string
+
+        //method of the string
+
+        //length:it is used to identify the length of the string
+        //space also has length
+        let str4="length";
+        console.log(str4.length);//6
+
+        //slice(st index,last index)
+        //it is turn the string into number of fragments
+        //it does not include last index
+        let str5="slice"
+        console.log(str5.slice(1,3));//li
+
+        //startswith(value)
+        // it is used to check whether the string is start with specific
+        //value or not.
+        //if yes it will return true or else false
+        let str6="startswith"
+        console.log(str6.startsWith('s'));//true
+        console.log(str6.startsWith('w'));//false
+
+        //endwith(value)
+        // it is used to check whether the string is end with specific
+        //value or not.
+        //if yes it will return true or else false
+        let str7="endwith"
+        console.log(str7.endsWith('s'));//false
+        console.log(str7.endsWith('h'));//true
+
+        //repeat()
+        //it is used to repeat the string or specific value
+        let str8="repeat"
+        console.log(str8.repeat(5));
+        console.log(str8[2].repeat(5));
+
+        //replace(replace value,new value)
+        //it is used to replace the string
+        let str9="mumbai to goa";
+        console.log(str9.replace("mumbai","pune"));
+
+        //toUpperCase():it is used to turn the string lowercase to uppercase
+        let str10="uppercase"
+        console.log(str10.toUpperCase());
+
+        //to lowercase():it is used to turn the string uppercase to lowercase
+        let str11="TOLOWERCASE"
+        console.log(str11.toLowerCase());
+
+        //trim():it used to remove the white space from string
+        let str12=" priyanka"
+        console.log(str12);
+        //console.log(str12.trim());
+        console.log(str12.trimStart());
+        console.log(str12.trimEnd());
+        
+        //split()
+        let str13="split"
+        console.log(str13.split(""));
+        let str14="amar akbar"
+        console.log(str14.split(" "));
+
+        //charAt()
+        let str15="charAt"
+        console.log(str15.charAt(2));//a
+
+        //charCodeAt()
+        let str16="charCodeAt"
+        console.log(str16.charCodeAt(4));//67
+
+        //subString()
+        let str17="substring"
+        console.log(str17.substring(2,5)); //bst
+             
+        //includes()
+        let str18="includes"
+        console.log(str18.includes("i"));//true
+        console.log(str18.includes("a"));//false
+
+        //indexOf()
+        let str19="indexof"
+        console.log(str19.indexOf("e"));//3
+
+        
+    </script>
+</body>
+</html>

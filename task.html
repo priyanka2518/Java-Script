@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            height: 400px;
+            width: 500px;
+            background-color: rgb(231, 226, 226);
+        }
+        .cl{
+            height: 30px;
+            padding-left: 10px;
+            margin-left: 10px;
+            width:450px;
+            box-sizing:unset;
+        }
+        #sub{
+            margin-left: 10px;
+           width: 450px;
+           margin-top: 10px;
+           box-sizing:border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h2>First Name</h2>
+        <input type="text" class="cl" placeholder="Enter name" required>
+        <h2>Last Name</h2>
+        <input type="text" class="cl" placeholder="Enter last name" required>
+        <h2>Select country</h2>
+        <select name="" class="cl">
+            <option value="">India</option>
+            <option value="">America</option>
+            <option value="">China</option>
+        </select>
+        <br>
+        <form action="" onsubmit="getOnsub()">
+        <input type="submit" value="SUBMIT" id="sub">
+        <script>
+            function get(name) {
+                return name
+            }
+        </script>
+        <script>
+            document.write(get)
+        </script>
+        </form>
+    </div>
+</body>
+</html>

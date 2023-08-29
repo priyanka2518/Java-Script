@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("start");
+        function fun1()
+         {
+          console.log("This is parent function");
+          function fun2()
+           {
+            console.log("Nested function");
+            function fun3()
+             {
+              console.log("Super nested");  
+            }fun3();
+          } fun2();
+        }fun1();
+    </script>
+</body>
+</html>
